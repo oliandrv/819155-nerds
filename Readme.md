@@ -1,7 +1,6 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ольга Рыкова](https://up.htmlacademy.ru/htmlcss/23/user/819155).
-
 * Наставник: [Дарья Клюхина]. (https://htmlacademy.ru/profile/id125399)
 
 ---
