@@ -26,26 +26,47 @@
     </header>
 
     <main>
-        <section class="headline"> 
+        <section class="headline">
             <h1>Магазин готовых шаблонов</h1>
         </section>
         <!-- Пока не знаю как это сделать-->
-        <form action="catalog.html" method="POST">
-            <input type="text" name="">
-        <div class="theform">
-            <h3>СЕТКА:</h3>
-            <p>Адаптивная</p>
-            <p>Фиксированная</p>
-            <p>Резиновая</p>
-            <h3>ОБОСЕННОСТИ:</h3>
-            <p>Слайдер</p>
-            <p>Блок преимуществ</p>
-            <p>Новости</p>
-            <p>Галерея</p>
-            <p>Корзина</p>
-            <a href="#">Показать</a>
-        </div>
-    </form>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+                <input type="range">
+                <input type="number" step="1">
+                <input type="number">
+            </fieldset>
+            <fieldset>
+                <legend>СЕТКА:</legend>
+
+                <label for="filter-grid-adaptive">
+                    <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
+                    Адаптивная
+                </label>
+                <br>
+
+                <label for="filter-grid-fixed">
+                    <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
+                    Фиксированная
+                </label>
+                <br>
+
+                <label for="filter-grid-rubber">
+                    <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
+                    Резиновая
+                </label>
+            </fieldset>
+
+
+           <fieldset>
+               <legend>ОСОБЕННОСТИ:</legend>
+               <label for="">
+                   <input type="checkbox" value="">
+               </label>
+           </fieldset>
+
+       
+        </form>
         <section class="information-block">
             <div class="sedona">
                 <a href="#">
@@ -93,9 +114,9 @@
             <a>СЛЕДУЮЩАЯ</a>
         </div>
         <section class="map">
-                <!--Тут я вставлю потом картинку, так как она идет как фоновое изображение-->
-            </section>
-            <!---Конец-->>
+            <!--Тут я вставлю потом картинку, так как она идет как фоновое изображение-->
+        </section>
+        <!---Конец-->>
     </main>
 
     <footer>
