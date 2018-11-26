@@ -32,10 +32,28 @@
         <!-- Пока не знаю как это сделать-->
         <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset>
+                <span>СТОИМОСТЬ:</span>
+                <br>
                 <input type="range">
-                <input type="number" step="1">
-                <input type="number">
+                <br>
+                <span>ОТ</span>
+                <br>
+                <input type="number" name="from" value="0" min="0" step="1">
+                <br>
+                <span>ДО</span>
+                <br>
+                <input type="number" name="before" value="1500" max="1500">
             </fieldset>
+
+            <fieldset>
+                <span>СОРТИРОВАТЬ:</span>
+                <a href="#">ПО ЦЕНЕ</a>
+                <a href="#">ПО ТИПУ</a>
+                <a href="#">ПО НАЗВАНИЮ</a>
+                <img src="img/icon-down-dir.png" width="11" height="10" alt="Стрелка вверх">
+                <img src="img/icon-up-dir.png" width="11" height="10" alt="Стрелка вниз">
+            </fieldset>
+
             <fieldset>
                 <legend>СЕТКА:</legend>
 
@@ -58,14 +76,35 @@
             </fieldset>
 
 
-           <fieldset>
-               <legend>ОСОБЕННОСТИ:</legend>
-               <label for="">
-                   <input type="checkbox" value="">
-               </label>
-           </fieldset>
+            <fieldset>
+                <legend>ОСОБЕННОСТИ:</legend>
+                <label for="filter-features-slide">
+                    <input type="checkbox" value="slide" name="features" id="filter-features-slide" checked>
+                    Слайдер
+                </label>
+                <br>
+                <label for="filter-features-benefitsblock">
+                    <input type="checkbox" value="benefitsblock" name="features" id="filter-features-benefitsblock">
+                    Блок преимуществ
+                </label>
+                <br>
+                <label for="filter-features-news">
+                    <input type="checkbox" value="news" name="features" id="filter-features-news">
+                    Новости
+                </label>
+                <br>
+                <label for="filter-features-gallery">
+                    <input type="checkbox" value="gallery" name="features" id="filter-features-gallery">
+                    Галерея
+                </label>
+                <br>
+                <label for="filter-features-basket">
+                    <input type="checkbox" value="basket" name="features" id="filter-features-basket">
+                    Корзина
+                </label>
+            </fieldset>
 
-       
+
         </form>
         <section class="information-block">
             <div class="sedona">
@@ -114,8 +153,38 @@
             <a>СЛЕДУЮЩАЯ</a>
         </div>
         <section class="map">
-            <!--Тут я вставлю потом картинку, так как она идет как фоновое изображение-->
+            <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
+            <div class="address">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <div>
+                    <address>
+                        <a href="191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8">191186, Санкт-Петербург,
+                            ул.Б.Конюшенная, д.19/8</a><br />
+                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                    </address>
+                    <button>НАПИШИТЕ НАМ</button>
+                </div>
+            </div>
         </section>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+
+                <h2>Напишите нам</h2>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="your_name">
+                <br>
+
+                <label for="mail">Ваш e-mail:</label>
+                <input type="email" id="mail" name="your_email">
+                <br>
+                <p><b>Текст письма:</b></p>
+                <textarea id="text" name="text-letter">В свободной форме</textarea>
+                <br>
+
+                <button>Отправить</button>
+            </fieldset>
+
+        </form>
         <!---Конец-->>
     </main>
 
