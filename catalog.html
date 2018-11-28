@@ -28,146 +28,147 @@
     <main>
         <section class="headline">
             <h1>Магазин готовых шаблонов</h1>
-        </section>
-        <!-- Пока не знаю как это сделать-->
-        <form action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
-                <span>СТОИМОСТЬ:</span>
-                <br>
-                <input type="range">
-                <br>
-                <span>ОТ</span>
-                <br>
-                <input type="number" name="from" value="0" min="0" step="1">
-                <br>
-                <span>ДО</span>
-                <br>
-                <input type="number" name="before" value="1500" max="1500">
-            </fieldset>
+            <!-- Пока не знаю как это сделать-->
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset>
+                    <span>СТОИМОСТЬ:</span>
+                    <br>
+                    <div class="range">
+                        <button></button>          
+                        <button></button>
+                    </div>
+                    <br>
+                    <label for="from">ОТ</label>
+                    <br>
+                    <input type="number" id="from" name="from" value="0" min="0" max="1500" step="1">
+                    <br>
+                    <label for="before">ДО</label>
+                    <br>
+                    <input type="number" id="before" name="before" value="1500" min="0" max="1500">
+                </fieldset>
 
-            <fieldset>
-                <span>СОРТИРОВАТЬ:</span>
-                <a href="#">ПО ЦЕНЕ</a>
-                <a href="#">ПО ТИПУ</a>
-                <a href="#">ПО НАЗВАНИЮ</a>
-                <img src="img/icon-down-dir.png" width="11" height="10" alt="Стрелка вверх">
-                <img src="img/icon-up-dir.png" width="11" height="10" alt="Стрелка вниз">
-            </fieldset>
+                <fieldset>
+                    <legend>СОРТИРОВАТЬ:</legend>
+                    <a href="#">ПО ЦЕНЕ</a>
+                    <a href="#">ПО ТИПУ</a>
+                    <a href="#">ПО НАЗВАНИЮ</a>
+                    <img src="img/icon-down-dir.png" width="11" height="10" alt="Стрелка вверх">
+                    <img src="img/icon-up-dir.png" width="11" height="10" alt="Стрелка вниз">
+                </fieldset>
 
-            <fieldset>
-                <legend>СЕТКА:</legend>
+                <fieldset>
+                    <legend>СЕТКА:</legend>
 
-                <label for="filter-grid-adaptive">
-                    <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
-                    Адаптивная
-                </label>
-                <br>
+                    <label for="filter-grid-adaptive">
+                        <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
+                        Адаптивная
+                    </label>
+                    <br>
 
-                <label for="filter-grid-fixed">
-                    <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
-                    Фиксированная
-                </label>
-                <br>
+                    <label for="filter-grid-fixed">
+                        <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
+                        Фиксированная
+                    </label>
+                    <br>
 
-                <label for="filter-grid-rubber">
-                    <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
-                    Резиновая
-                </label>
-            </fieldset>
-
-
-            <fieldset>
-                <legend>ОСОБЕННОСТИ:</legend>
-                <label for="filter-features-slide">
-                    <input type="checkbox" value="slide" name="features" id="filter-features-slide" checked>
-                    Слайдер
-                </label>
-                <br>
-                <label for="filter-features-benefitsblock">
-                    <input type="checkbox" value="benefitsblock" name="features" id="filter-features-benefitsblock">
-                    Блок преимуществ
-                </label>
-                <br>
-                <label for="filter-features-news">
-                    <input type="checkbox" value="news" name="features" id="filter-features-news">
-                    Новости
-                </label>
-                <br>
-                <label for="filter-features-gallery">
-                    <input type="checkbox" value="gallery" name="features" id="filter-features-gallery">
-                    Галерея
-                </label>
-                <br>
-                <label for="filter-features-basket">
-                    <input type="checkbox" value="basket" name="features" id="filter-features-basket">
-                    Корзина
-                </label>
-            </fieldset>
+                    <label for="filter-grid-rubber">
+                        <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
+                        Резиновая
+                    </label>
+                </fieldset>
 
 
-        </form>
-        <section class="information-block">
-            <div class="sedona">
-                <a href="#">
-                    <img src="img/img-sedona.png" width="360" height="576" alt="Макет Седоны">
-                </a>
-                <div class="informational-sedona">
+                <fieldset>
+                    <legend>ОСОБЕННОСТИ:</legend>
+                    <label for="filter-slide">
+                        <input type="checkbox" value="slide" name="features" id="filter-slide" checked>
+                        Слайдер
+                    </label>
+                    <br>
+                    <label for="filter-benefitsblock">
+                        <input type="checkbox" value="benefitsblock" name="features" id="filter-benefitsblock">
+                        Блок преимуществ
+                    </label>
+                    <br>
+                    <label for="filter-news">
+                        <input type="checkbox" value="news" name="features" id="filter-news">
+                        Новости
+                    </label>
+                    <br>
+                    <label for="filter-gallery">
+                        <input type="checkbox" value="gallery" name="features" id="filter-gallery">
+                        Галерея
+                    </label>
+                    <br>
+                    <label for="filter-basket">
+                        <input type="checkbox" value="basket" name="features" id="filter-basket">
+                        Корзина
+                    </label>
+                </fieldset>
+
+
+            </form>
+            <section class="information-block">
+                <div class="sedona">
                     <a href="#">
-                        <h3>SEDONA</h3>
+                        <img src="img/img-sedona.png" width="360" height="576" alt="Макет Седоны">
                     </a>
-                    <p>Информационный сайт для туристов</p>
-                    <button>9900 РУБ.</button>
+                    <div class="informational-sedona">
+                        <a href="#">
+                            <h3>SEDONA</h3>
+                        </a>
+                        <p>Информационный сайт для туристов</p>
+                        <button>9900 РУБ.</button>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <a href="#">
-                    <img src="img/img-pink.png" width="360" height="576" alt="Макет Пинк">
-                </a>
-            </div>
-            <div class="block">
-                <a href="#">
-                    <img src="img/img-barbershop.png" width="360" height="576" alt="Макет Барбершоп">
-                </a>
-            </div>
-            <div class="block">
-                <a href="#">
-                    <img src="img/img-mishka.png" width="360" height="576" alt="Макет Мишка">
-                </a>
-            </div>
-            <div class="block">
-                <a href="#">
-                    <img src="img/img-aplus.png" width="360" height="576" alt="Макет с курсами">
-                </a>
-            </div>
-            <div class="block">
-                <a href="#">
-                    <img src="img/img-kvast.png" width="360" height="576" alt="Макет Кваст">
-                </a>
-            </div>
-        </section>
-        <!--Второй красный блок-->
-        <div>
-            <a>1</a>
-            <a>2</a>
-            <a>3</a>
-            <a>СЛЕДУЮЩАЯ</a>
-        </div>
-        <section class="map">
-            <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
-            <div class="address">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <div>
-                    <address>
-                        <a href="191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8">191186, Санкт-Петербург,
-                            ул.Б.Конюшенная, д.19/8</a><br />
-                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
-                    </address>
-                    <button>НАПИШИТЕ НАМ</button>
+                <div class="block">
+                    <a href="#">
+                        <img src="img/img-pink.png" width="360" height="576" alt="Макет Пинк">
+                    </a>
                 </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="img/img-barbershop.png" width="360" height="576" alt="Макет Барбершоп">
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="img/img-mishka.png" width="360" height="576" alt="Макет Мишка">
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="img/img-aplus.png" width="360" height="576" alt="Макет с курсами">
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="img/img-kvast.png" width="360" height="576" alt="Макет Кваст">
+                    </a>
+                </div>
+            </section>
+            <!--Второй красный блок-->
+            <div>
+                <a>1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>СЛЕДУЮЩАЯ</a>
             </div>
-        </section>
-        <form action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
+            <section class="map">
+                <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
+                <div class="address">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <div>
+                        <address>
+                            <a href="#">191186, Санкт-Петербург,
+                                ул.Б.Конюшенная, д.19/8</a><br />
+                            <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                        </address>
+                        <button>НАПИШИТЕ НАМ</button>
+                    </div>
+                </div>
+            </section>
+            <form action="https://echo.htmlacademy.ru" method="POST">
 
                 <h2>Напишите нам</h2>
                 <label for="name">Ваше имя:</label>
@@ -177,15 +178,15 @@
                 <label for="mail">Ваш e-mail:</label>
                 <input type="email" id="mail" name="your_email">
                 <br>
-                <p><b>Текст письма:</b></p>
-                <textarea id="text" name="text-letter">В свободной форме</textarea>
+                <label for="text-of-letter">Текст письма:</label>
+                <textarea id="text-of-letter" name="text-letter">В свободной форме</textarea>
                 <br>
 
-                <button>Отправить</button>
-            </fieldset>
+                <button type="submit">Отправить</button>
 
-        </form>
-        <!---Конец-->>
+            </form>
+            <!---Конец-->>
+        </section>
     </main>
 
     <footer>
