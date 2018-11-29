@@ -27,15 +27,15 @@
 
     <main>
         <section class="headline">
-                <h2 class="visually-hidden">Форма для готовых шаблонов</h2>
+            <h2 class="visually-hidden">Форма для готовых шаблонов</h2>
             <h1>Магазин готовых шаблонов</h1>
             <!-- Пока не знаю как это сделать-->
-            <form action="https://echo.htmlacademy.ru" method="GET">
+            <form action="https://echo.htmlacademy.ru" method="POST">
                 <fieldset>
                     <span>СТОИМОСТЬ:</span>
                     <br>
                     <div class="range">
-                        <button></button>          
+                        <button></button>
                         <button></button>
                     </div>
                     <br>
@@ -52,12 +52,10 @@
                     <legend>СОРТИРОВАТЬ:</legend>
                     <a href="#">ПО ЦЕНЕ</a>
                     <a href="#">ПО ТИПУ</a>
-                    <a href="#">ПО НАЗВАНИЮ</a> 
+                    <a href="#">ПО НАЗВАНИЮ</a>
                     <br>
-                    <button title="Стрелка вверх"> </button>
-                    <h2 class="visually-hidden">Кнопа вверх</h2>
-                    <button title="Стрелка вниз"> </button>
-                    <h2 class="visually-hidden">Кнопка вниз</h2>
+                    <button title="Стрелка вверх" aria-label="up arrow"> </button>
+                    <button title="Стрелка вниз" aria-label="arrow to down"> </button>
                 </fieldset>
 
                 <fieldset>
@@ -113,7 +111,7 @@
 
             </form>
             <section class="information-block">
-                    <h2 class="visually-hidden">Готовые шаблоны</h2>
+                <h2 class="visually-hidden">Готовые шаблоны</h2>
                 <div class="sedona">
                     <a href="#">
                         <img src="img/img-sedona.png" width="360" height="576" alt="Макет Седоны">
@@ -159,21 +157,21 @@
                 <a>3</a>
                 <a>СЛЕДУЮЩАЯ</a>
             </div>
-            <section class="map">
-                    <h2 class="visually-hidden">Карта</h2>
-                <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
-                <div class="address">
-                    <h3>NЁRDS DESIGN STUDIO</h3>
-                    <div>
-                        <address>
-                            191186, Санкт-Петербург,
-                                ул.Б.Конюшенная, д.19/8<br>
-                            <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
-                        </address>
-                        <button type="submit">НАПИШИТЕ НАМ</button>
-                    </div>
+        </section>
+        <section class="map">
+            <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
+            <div class="address">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <div>
+                    <address>
+                        191186, Санкт-Петербург,
+                        ул.Б.Конюшенная, д.19/8<br>
+                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                    </address>
+                    <button type="submit">НАПИШИТЕ НАМ</button>
                 </div>
-            </section>
+            </div>
+
             <form action="https://echo.htmlacademy.ru" method="POST">
 
                 <h2>Напишите нам</h2>
@@ -191,7 +189,7 @@
                 <button type="submit">Отправить</button>
 
             </form>
-            <!---Конец-->>
+            <!---Конец-->
         </section>
     </main>
 
