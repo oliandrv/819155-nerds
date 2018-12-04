@@ -33,7 +33,7 @@
             <!-- Пока не знаю как это сделать-->
             <form action="https://echo.htmlacademy.ru" method="POST">
                 <fieldset>
-                    <span>СТОИМОСТЬ:</span>
+                    <legend class="form-text">СТОИМОСТЬ:</legend>
                     <br>
                     <div class="range">
                         <button></button>
@@ -50,17 +50,17 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>СОРТИРОВАТЬ:</legend>
-                    <a href="#">ПО ЦЕНЕ</a>
-                    <a href="#">ПО ТИПУ</a>
-                    <a href="#">ПО НАЗВАНИЮ</a>
+                    <legend class="form-text">СОРТИРОВАТЬ:</legend>
+                    <a href="#" class="sort">ПО ЦЕНЕ</a>
+                    <a href="#" class="sort">ПО ТИПУ</a>
+                    <a href="#" class="sort">ПО НАЗВАНИЮ</a>
                     <br>
                     <button title="Стрелка вверх" aria-label="стрелка вверх"> </button>
                     <button title="Стрелка вниз" aria-label="стрелка вниз"> </button>
                 </fieldset>
 
                 <fieldset>
-                    <legend>СЕТКА:</legend>
+                    <legend class="form-text">СЕТКА:</legend>
 
                     <label for="filter-grid-adaptive">
                         <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
@@ -82,7 +82,7 @@
 
 
                 <fieldset>
-                    <legend>ОСОБЕННОСТИ:</legend>
+                    <legend class="form-text">ОСОБЕННОСТИ:</legend>
                     <label for="filter-slide">
                         <input type="checkbox" value="slide" name="features" id="filter-slide" checked>
                         Слайдер
@@ -159,8 +159,9 @@
                 <a>СЛЕДУЮЩАЯ</a>
             </div>
         </section>
-        <section class="map">
+        <section class="map-section">
             <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
+            <img src="img/map.png" alt="Карта" class="map">
             <div class="address">
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <div>
@@ -174,20 +175,22 @@
             </div>
 
             <form action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset>
 
-                <h2>Напишите нам</h2>
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" name="your_name">
-                <br>
+                    <h2>Напишите нам</h2>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="your_name">
+                    <br>
 
-                <label for="mail">Ваш e-mail:</label>
-                <input type="email" id="mail" name="your_email">
-                <br>
-                <label for="text-of-letter">Текст письма:</label>
-                <textarea id="text-of-letter" name="text-letter">В свободной форме</textarea>
-                <br>
+                    <label for="mail">Ваш e-mail:</label>
+                    <input type="email" id="mail" name="your_email">
+                    <br>
+                    <p><b>Текст письма:</b></p>
+                    <textarea id="text" name="text-letter">В свободной форме</textarea>
+                    <br>
 
-                <button type="submit">Отправить</button>
+                    <button type="submit">Отправить</button>
+                </fieldset>
 
             </form>
             <!---Конец-->
@@ -221,7 +224,7 @@
                 </a>
             </li>
         </ul>
-        <div>
+        <div class="text-footer">
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
