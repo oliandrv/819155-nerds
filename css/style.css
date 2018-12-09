@@ -110,7 +110,6 @@ a {
   line-height: 18px;
   font-size: 16px;
   font-weight: 500;
-
 }
 .button2 {
   background-color: #00ca74;
@@ -267,4 +266,90 @@ footer li {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+.information-button:hover {
+  background-color: #e74246;
+  opacity: 1;
+}
+.information-button:active {
+  background-color: #d7373b;;
+  color: rgb(255, 255, 255, 0.3)
+}
+}
+/* .menu-buttons:hover { 
+  color:rgb(251, 86, 90, 1);
+}
+.menu-buttons:active {
+  color: rgb(0, 0, 0, 0.3)
+}
+.menu-buttons:visited {
+  color: rgb(0, 0, 0, 1) ;
+  text-decoration: underline ;
+} */
+/*--Вот тут внизу (hover) не применился стиль при наведении.. не понимаю почему--*/
+.button1:hover {
+  background-color:#e74246;
+  opacity: 1;
+}
+.button1:active {
+  background-color: #d7373b;
+  color: rgb(255, 255, 255, 0.3);
+}
+.button2:hover {
+  background-color:#00bc6c;
+  opacity: 1;
+}
+.button2:active {
+  background-color:#00aa62 ;
+  color: rgb(255, 255, 255, 0.3);
+}
+.button3:hover {
+  background-color:#eab534;
+  opacity: 1;
+}
+.button3:active {
+  background-color: #e5a722;
+  color:rgb(255, 255, 255, 0.3);
+}
+.logos img {
+  opacity: 0.2;
+}
+.logos img:hover {
+  opacity: 1;
+}
+.logos img:active {
+  opacity: 0.1;
+}
+.show-button {
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;  
+  padding: 19px 88px 18px;
+  border-radius: 5px;
+  border: none;
+}
+.show-button:hover {
+  background-color: #dfdfdf;
+  opacity: 1;
+}
+.show-button:active {
+  background-color: #d5d5d5;
+  color:rgb(0, 0, 0, 0.3) ;
+}
+.page {
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 19px 13px 19px 21px;
+  border-radius: 5px;
+  border: none;
+}
+.page-next {
+  padding: 19px 88px 18px;
+  border-radius: 5px;
+  border: none;
 }
