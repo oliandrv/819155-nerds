@@ -267,27 +267,36 @@ footer li {
   font-weight: 500;
   line-height: 18px;
 }
-.information-button:hover {
+.information-button:hover,
+.information-button:focus {
   background-color: #e74246;
   opacity: 1;
 }
 .information-button:active {
-  background-color: #d7373b;;
-  color: rgb(255, 255, 255, 0.3)
+  background-color: #d7373b;
+  color: rgb(255, 255, 255, 0.3);
 }
+.menu-buttons {
+  position: relative;
 }
-/* .menu-buttons:hover { 
+.menu-buttons.active::after {
+  content: "" ;
+  position: absolute;
+  bottom: -12px ; 
+  left: 3px;
+  right: 3px;
+  height: 2px;
+  background-color: #fb565a; 
+}
+ .menu-buttons:hover,
+ .menu-buttons:focus { 
   color:rgb(251, 86, 90, 1);
 }
 .menu-buttons:active {
-  color: rgb(0, 0, 0, 0.3)
+  color: rgb(0, 0, 0, 0.3);
 }
-.menu-buttons:visited {
-  color: rgb(0, 0, 0, 1) ;
-  text-decoration: underline ;
-} */
-/*--Вот тут внизу (hover) не применился стиль при наведении.. не понимаю почему--*/
-.button1:hover {
+.button1:hover,
+.button1:focus {
   background-color:#e74246;
   opacity: 1;
 }
@@ -295,7 +304,8 @@ footer li {
   background-color: #d7373b;
   color: rgb(255, 255, 255, 0.3);
 }
-.button2:hover {
+.button2:hover,
+.button2:focus{
   background-color:#00bc6c;
   opacity: 1;
 }
@@ -303,7 +313,8 @@ footer li {
   background-color:#00aa62 ;
   color: rgb(255, 255, 255, 0.3);
 }
-.button3:hover {
+.button3:hover,
+.button3:focus {
   background-color:#eab534;
   opacity: 1;
 }
@@ -330,7 +341,8 @@ footer li {
   border-radius: 5px;
   border: none;
 }
-.show-button:hover {
+.show-button:hover,
+.show-button:focus {
   background-color: #dfdfdf;
   opacity: 1;
 }
@@ -347,9 +359,72 @@ footer li {
   padding: 19px 13px 19px 21px;
   border-radius: 5px;
   border: none;
+  position: relative;
 }
 .page-next {
   padding: 19px 88px 18px;
   border-radius: 5px;
   border: none;
+}
+.page:hover, 
+.page:focus {
+  background-color: #dfdfdf;
+}
+.page:active {
+  background-color: #d5d5d5;
+}
+.page.active::after{
+  background-color:  #dbdbdb;
+  border: 3px solid;
+}
+.icon {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon:hover,
+.icon:focus {
+  background-color: #e74246;
+}
+.icon:active {
+  background-color: #d7373b;
+}
+.icon:active img {
+  opacity: 0.3;
+}
+.sort {
+  opacity: 0.3;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sort:hover,
+.sort:focus {
+  opacity: 0.6;
+}
+.sort:active {
+opacity: 1;
+}
+.button-write{
+  background-color: #fb565a;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.button-write:focus {
+  background-color: #e74246;
+  opacity: 1;
+}
+.button-write:active {
+  background-color: #d7373b;
+  color: rgb(255, 255, 255, 0.3);
 }
