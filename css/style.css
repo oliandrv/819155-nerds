@@ -61,14 +61,17 @@ a {
   line-height: 55px;
   margin-bottom: 19px;
 }
- .information a {
-  color: #283136;
-  font-size: 16px;
-  font-weight: 400;
+.information p {
+  color: #283136 ;
+  font-size: 16px ;
+  font-weight: 400 ;
   line-height: 24px;
 }
-.slider1 a {
-  background-color: #fb565a;
+ .information a {
+  color: №ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 .information-button {
   padding-left: 70px;
@@ -93,9 +96,10 @@ a {
   line-height: 30px;
 }
 .services p {
+  color: #283136;
   font-size: 16px;
   font-weight: 400;
-   line-height: 24px;
+  line-height: 24px;
 }
 .button1 {
   background-color: #fb565a;
@@ -103,6 +107,10 @@ a {
   padding: 19px 39px 18px;
   border-radius: 5px;
   border: none;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
+
 }
 .button2 {
   background-color: #00ca74;
@@ -110,6 +118,9 @@ a {
   padding: 19px 39px 18px;
   border-radius: 5px;
   border: none;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .button3 {
   background-color: #efc84a;
@@ -117,11 +128,16 @@ a {
   padding: 19px 39px 18px;
   border-radius: 5px;
   border: none;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 /*--About us--*/
 .aboutus b {
-  width: 1440px;
-  height: 1925px;
+   color: #000000;
+   font-size: 45px;
+   font-weight: 500;
+   line-height: 45px;
 }
 .aboutus p {
   color: #283136;
@@ -139,12 +155,19 @@ a {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 24px;
 }
 .aboutus dd {
   color: #000000;
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
+}
+.aboutus dt {
+  color: #283136;
+  line-height: 18px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .logos {
   display: flex;
@@ -173,6 +196,18 @@ a {
   background: white;
   left: 10px;
 }
+.address address {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400 ;
+  line-height: 18px ;
+}
+.address a {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400 ;
+  line-height: 18px ;
+}
 .text-footer b {
   color: #000000;
   font-size: 36px;
@@ -191,7 +226,7 @@ footer li {
 
 /*--Catalog--*/
 
-.headline h2 {
+.headline h1 {
   color: #000000;
   font-size: 55px;
   font-weight: 500;
@@ -209,11 +244,11 @@ footer li {
   font-weight: 400;
   line-height: 18px;
 }
-label {
+.label-items {
   color: #283136;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
 }
 .informational-sedona h3 {
   color: #000000;
@@ -225,5 +260,11 @@ label {
   color: #666666;
   font-size: 16px;
   font-weight: 400;
+  line-height: 18px;
+}
+.pages a {
+  color: #000000 ;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
 }
