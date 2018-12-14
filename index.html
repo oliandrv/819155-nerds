@@ -10,185 +10,214 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Нёрдс">
-        </a>
-        <nav class="main-navigation">
-            <a href="studio.html" class="menu-buttons">Студия</a>
-            <a href="customers.html" class="menu-buttons">Клиенты</a>
-            <a href="catalog.html" class="menu-buttons">Магазины</a>
-            <a href="contacts.html" class="menu-buttons">Контакты</a>
-        </nav>
-        <a class="basket">
-            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-            <span class="menu-buttons">Корзина </span>
-        </a>
-    </header>
-    
+    <div class="gray">
+        <div class="container">
+            <header class="main-header">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Нёрдс">
+                </a>
+                <nav class="main-navigation">
+                    <a href="studio.html" class="menu-buttons">Студия</a>
+                    <a href="customers.html" class="menu-buttons">Клиенты</a>
+                    <a href="catalog.html" class="menu-buttons">Магазины</a>
+                    <a href="contacts.html" class="menu-buttons">Контакты</a>
+                </nav>
+                <a class="basket" href="#">
+                    <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+                    <span>Корзина</span>
+                </a>
+            </header>
+        </div>
+    </div>
     <main>
         <!--Первый блок со слайдами-->
         <section class="information">
+            <div class="container">
                 <h2 class="visually-hidden">Девиз</h2>
-            <div class="slide1">
-                <b>Долго, дорого, скрупулезно.</b>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <div class="slide2">
-                <b>Любим математику как никто другой</b>
-                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <div class="slide3">
-                <b>Только ночь, только хардкор</b>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-        </section>
-        <!--Конец-->
-
-        <section class="services">
-            <h2 class="visually-hidden">Услуги</h2>
-            <div>
-                <img src="img/illustration-1.png" width="300" height="146" alt="Разработка веб сайтов">
-                <h3>ВЕБ-САЙТЫ</h3>
-                <P>Мир никогда не будет прежним после того как увидит ваш сайт</P>
-                <a href="#" class="button1">Заказать</a>
-            </div>
-            <div>
-                <img src="img/illustration-2.png" width="300" height="146" alt="ПРИЛОЖЕНИЯ">
-                <h3>ПРИЛОЖЕНИЯ</h3>
-                <P>Покорите топ-10 приложений в AppStore и Google Play</P>
-                <a href="#" class="button2">Заказать</a>
-            </div>
-            <div>
-                <img src="img/illustration-3.png" width="300" height="146" alt="ПРЕЗЕНТАЦИИ">
-                <h3>ПРЕЗЕНТАЦИИ</h3>
-                <P>Вы даже не подозреваете, насколько вы изумительны!</P>
-                <a href="#" class="button3">Заказать</a>
-            </div>
-        </section>
-
-        <!--Второй красный блок-->
-        <section class="aboutus">
-            <h2 class="visually-hidden">О нас</h2>
-            <div>
-                <b>Мы-маленькая, но гордая дизайн-студия из Краснодара</b>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем
-                    не
-                    покладая рук, как роботы.</p>
-                <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</h4>
-                <ul>
-                    <li>
-                        Веб-сайтов любой сложности
-                    </li>
-                    <li>
-                        Мобильных приложений для IOS и Android
-                    </li>
-                    <li>
-                        Слайдшоу и видео для корпотративных перзентация
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация Нёрдс">
-                <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
-                <dl>
-                    <dt>Уровень самоотдачи</dt>
-                    <dd>146%</dd>
-                    <dt>Соблюдение сроков</dt>
-                    <dd>100%</dd>
-                    <dt>Минимальная предоплата</dt>
-                    <dd>50%</dd>
-                </dl>
-            </div>
-            <div class="logos">
-                <a href="#">
-                    <img src="img/logo-1.png" width="199" height="68" alt="Сайт HTMLAcademy">
-                </a>
-                <a href="#">
-                    <img src="img/logo-2.png" width="209" height="90" alt="Сайт Бородинский">
-                </a>
-                <a href="#">
-                    <img src="img/logo-3.png" width="185" height="62" alt="Сайт Пинк">
-                </a>
-                <a href="#">
-                    <img src="img/logo-4.png" width="173" height="84" alt="Сайт Мишка">
-                </a>
-            </div>
-        </section>
-
-        <section class="map-section">
-            <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
-            <img src="img/map.png" alt="Карта" class="map">
-            <div class="address">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <div>
-                    <address>
-                        191186, Санкт-Петербург,
-                        ул.Б.Конюшенная, д.19/8<br>
-                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
-                    </address>
-                    <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
+                <div class="slides">
+                    <div class="slide1">
+                        <b>Долго, дорого, скрупулезно.</b>
+                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
+                    </div>
+                    <img src="img/slide1.png" width="698" height="413" alt="Слайд номер 1">
+                </div>
+                <div class="slides">
+                    <div class="slide2">
+                        <b>Любим математику как никто другой</b>
+                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                        <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
+                    </div>
+                    <img src="img/slide2.png" width="663" height="430" alt="Слайд номер 2">
+                </div>
+                <div class="slides">
+                    <div class="slide3">
+                        <b>Только ночь, только хардкор</b>
+                        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                        <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
+                    </div>
+                    <img src="img/slide3.png" width="759" height="411" alt="Слайд номер 3">
                 </div>
             </div>
         </section>
 
-        <section>
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset>
+        <!--Конец-->
+        <div class="container">
+            <section class="services">
+                <h2 class="visually-hidden">Услуги</h2>
+                <div class="our-services">
+                    <img src="img/illustration-1.png" width="300" height="146" alt="Разработка веб сайтов">
+                    <h3>ВЕБ-САЙТЫ</h3>
+                    <P>Мир никогда не будет прежним после того как увидит ваш сайт</P>
+                    <a href="#" class="button1">ЗАКАЗАТЬ</a>
+                </div>
+                <div class="our-services">
+                    <img src="img/illustration-2.png" width="300" height="146" alt="ПРИЛОЖЕНИЯ">
+                    <h3>ПРИЛОЖЕНИЯ</h3>
+                    <P>Покорите топ-10 приложений в AppStore и Google Play</P>
+                    <a href="#" class="button2">ЗАКАЗАТЬ</a>
+                </div>
+                <div class="our-services">
+                    <img src="img/illustration-3.png" width="300" height="146" alt="ПРЕЗЕНТАЦИИ">
+                    <h3>ПРЕЗЕНТАЦИИ</h3>
+                    <P>Вы даже не подозреваете, насколько вы изумительны!</P>
+                    <a href="#" class="button3">ЗАКАЗАТЬ</a>
+                </div>
+            </section>
 
-                    <h2>Напишите нам</h2>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="your_name">
-                    <br>
+            <hr>
 
-                    <label for="mail">Ваш e-mail:</label>
-                    <input type="email" id="mail" name="your_email">
-                    <br>
-                    <p><b>Текст письма:</b></p>
-                    <textarea id="text" name="text-letter">В свободной форме</textarea>
-                    <br>
+            <!--Второй красный блок-->
+            <section class="aboutus">
+                <h2 class="visually-hidden">О нас</h2>
+                <div class="slogan">
+                    <div class="slogan-statistics">
+                        <b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
+                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+                            Работаем
+                            не
+                            покладая рук, как роботы.</p>
+                        <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</h4>
+                        <ul>
+                            <li>
+                                Веб-сайтов любой сложности
+                            </li>
+                            <li>
+                                Мобильных приложений для IOS и Android
+                            </li>
+                            <li>
+                                Слайдшоу и видео для корпотративных перзентация
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nerds-statistics">
+                        <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация Нёрдс">
+                        <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
+                        <dl>
+                            <dt>Уровень самоотдачи</dt>
+                            <dd>146%</dd>
+                            <dt>Соблюдение сроков</dt>
+                            <dd>100%</dd>
+                            <dt>Минимальная предоплата</dt>
+                            <dd>50%</dd>
+                        </dl>
+                    </div>
+                </div>
+                <hr>
 
-                    <button type="submit">Отправить</button>
-                </fieldset>
-            </form>
-        </section>
+                <div class="logos">
+                    <a href="#">
+                        <img src="img/logo-1.png" width="199" height="68" alt="Сайт HTMLAcademy">
+                    </a>
+                    <a href="#">
+                        <img src="img/logo-2.png" width="209" height="90" alt="Сайт Бородинский">
+                    </a>
+                    <a href="#">
+                        <img src="img/logo-3.png" width="185" height="62" alt="Сайт Пинк">
+                    </a>
+                    <a href="#">
+                        <img src="img/logo-4.png" width="173" height="84" alt="Сайт Мишка">
+                    </a>
+                </div>
+            </section>
+            <hr>
+        </div>
+
+        <div class="container">
+            <section class="map-section">
+                <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
+                <img src="img/map.png" alt="Карта" class="map">
+                <div class="address">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <div>
+                        <address>
+                            191186, Санкт-Петербург,
+                            ул.Б.Конюшенная, д.19/8<br>
+                            <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                        </address>
+                        <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <fieldset>
+
+                        <h2>Напишите нам</h2>
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="your_name">
+                        <br>
+
+                        <label for="mail">Ваш e-mail:</label>
+                        <input type="email" id="mail" name="your_email">
+                        <br>
+                        <p><b>Текст письма:</b></p>
+                        <textarea id="text" name="text-letter">В свободной форме</textarea>
+                        <br>
+
+                        <button type="submit">Отправить</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>>
         <!-- Конец-->
 
     </main>
-    <footer>
-        <ul>
-            <li>
-                <a href="https://vk.com" class="icon">
-                    <span class="visually-hidden">Вконтакте</span>
-                    <span>
-                        <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="https://facebook.com" class="icon">
-                    <span class="visually-hidden">Фэйсбук</span>
-                    <span>
-                        <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com" class="icon">
-                    <span class="visually-hidden">Инстаграм</span>
-                    <span>
-                        <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
-                    </span>
-                </a>
-            </li>
-        </ul>
-        <div class="text-footer">
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-    </footer>
+    <div class="container">
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://vk.com" class="icon">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <span>
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" class="icon">
+                        <span class="visually-hidden">Фэйсбук</span>
+                        <span>
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" class="icon">
+                        <span class="visually-hidden">Инстаграм</span>
+                        <span>
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-footer">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
+    </div>>
 </body>
+
 </html>
