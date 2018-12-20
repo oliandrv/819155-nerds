@@ -40,210 +40,223 @@
             </div>
             <!-- Пока не знаю как это сделать-->
             <div class="container">
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                    <fieldset>
-                        <legend class="form-text">СТОИМОСТЬ:</legend>
-                        <br>
-                        <div class="range">
-                            <button></button>
-                            <button></button>
-                        </div>
-                        <br>
-                        <label for="from" class="label-items">ОТ</label>
-                        <br>
-                        <input type="number" id="from" name="from" value="0" min="0" max="1500" step="1">
-                        <br>
-                        <label for="before" class="label-items">ДО</label>
-                        <br>
-                        <input type="number" id="before" name="before" value="1500" min="0" max="1500">
-                    </fieldset>
+                <div class="page-columns">
+                    <aside class="left-column">
+                        <form action="https://echo.htmlacademy.ru" method="POST">
+                            <fieldset class="selection">
+                                <legend class="form-text">СТОИМОСТЬ:</legend>
+                                <br>
+                                <div class="range">
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                                <br>
+                                <label for="from" class="label-items">ОТ</label>
+                                <br>
+                                <input type="number" id="from" name="from" value="0" min="0" max="1500" step="1">
+                                <br>
+                                <label for="before" class="label-items">ДО</label>
+                                <br>
+                                <input type="number" id="before" name="before" value="1500" min="0" max="1500">
+                            </fieldset>
 
-                    <fieldset>
-                        <legend class="form-text">СОРТИРОВАТЬ:</legend>
-                        <a href="#" class="sort">ПО ЦЕНЕ</a>
-                        <a href="#" class="sort">ПО ТИПУ</a>
-                        <a href="#" class="sort">ПО НАЗВАНИЮ</a>
-                        <br>
-                        <button title="Стрелка вверх" aria-label="стрелка вверх"> </button>
-                        <button title="Стрелка вниз" aria-label="стрелка вниз"> </button>
-                    </fieldset>
+                            <fieldset class="selection">
+                                <legend class="form-text">СЕТКА:</legend>
 
-                    <fieldset>
-                        <legend class="form-text">СЕТКА:</legend>
+                                <label for="filter-grid-adaptive" class="label-items">
+                                    <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
+                                    Адаптивная
+                                </label>
+                                <br>
 
-                        <label for="filter-grid-adaptive" class="label-items">
-                            <input type="radio" value="adaptive" name="grid" id="filter-grid-adaptive" checked>
-                            Адаптивная
-                        </label>
-                        <br>
+                                <label for="filter-grid-fixed" class="label-items">
+                                    <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
+                                    Фиксированная
+                                </label>
+                                <br>
 
-                        <label for="filter-grid-fixed" class="label-items">
-                            <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
-                            Фиксированная
-                        </label>
-                        <br>
-
-                        <label for="filter-grid-rubber" class="label-items">
-                            <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
-                            Резиновая
-                        </label>
-                    </fieldset>
+                                <label for="filter-grid-rubber" class="label-items">
+                                    <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
+                                    Резиновая
+                                </label>
+                            </fieldset>
 
 
-                    <fieldset>
-                        <legend class="form-text">ОСОБЕННОСТИ:</legend>
-                        <label for="filter-slide" class="label-items">
-                            <input type="checkbox" value="slide" name="features" id="filter-slide" checked>
-                            Слайдер
-                        </label>
-                        <br>
-                        <label for="filter-benefitsblock" class="label-items">
-                            <input type="checkbox" value="benefitsblock" name="features" id="filter-benefitsblock">
-                            Блок преимуществ
-                        </label>
-                        <br>
-                        <label for="filter-news" class="label-items">
-                            <input type="checkbox" value="news" name="features" id="filter-news">
-                            Новости
-                        </label>
-                        <br>
-                        <label for="filter-gallery" class="label-items">
-                            <input type="checkbox" value="gallery" name="features" id="filter-gallery">
-                            Галерея
-                        </label>
-                        <br>
-                        <label for="filter-basket" class="label-items">
-                            <input type="checkbox" value="basket" name="features" id="filter-basket">
-                            Корзина
-                        </label>
-                        <br>
-                    </fieldset>
-                    <button class="show-button">Показать</button>
+                            <fieldset class="selection">
+                                <legend class="form-text">ОСОБЕННОСТИ:</legend>
+                                <label for="filter-slide" class="label-items">
+                                    <input type="checkbox" value="slide" name="features" id="filter-slide" checked>
+                                    Слайдер
+                                </label>
+                                <br>
+                                <label for="filter-benefitsblock" class="label-items">
+                                    <input type="checkbox" value="benefitsblock" name="features" id="filter-benefitsblock">
+                                    Блок преимуществ
+                                </label>
+                                <br>
+                                <label for="filter-news" class="label-items">
+                                    <input type="checkbox" value="news" name="features" id="filter-news">
+                                    Новости
+                                </label>
+                                <br>
+                                <label for="filter-gallery" class="label-items">
+                                    <input type="checkbox" value="gallery" name="features" id="filter-gallery">
+                                    Галерея
+                                </label>
+                                <br>
+                                <label for="filter-basket" class="label-items">
+                                    <input type="checkbox" value="basket" name="features" id="filter-basket">
+                                    Корзина
+                                </label>
+                                <br>
+                            </fieldset>
+                            <button class="show-button">ПОКАЗАТЬ</button>
 
-                </form>
+                        </form>
+                    </aside>
+                    <div class="right-column">
+                        <form action="https://echo.htmlacademy.ru" method="POST">
+                           
 
-                <section class="information-block">
-                    <h2 class="visually-hidden">Готовые шаблоны</h2>
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-sedona.png" width="360" height="576" alt="Макет Седоны">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>SEDONA</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
+                            <div class="selection">
+                                <legend class="form-text">СОРТИРОВАТЬ:</legend>
+                                <a href="#" class="sort">ПО ЦЕНЕ</a>
+                                <a href="#" class="sort">ПО ТИПУ</a>
+                                <a href="#" class="sort">ПО НАЗВАНИЮ</a>
+                                <br>
+                                <button title="Стрелка вверх" aria-label="стрелка вверх"> </button>
+                                <button title="Стрелка вниз" aria-label="стрелка вниз"> </button>
+                            </div>
+
+                        </form>
+
+                        <section class="information-block">
+                            <h2 class="visually-hidden">Готовые шаблоны</h2>
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-sedona.png" width="360" height="576" alt="Макет Седоны">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>SEDONA</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-pink.png" width="360" height="576" alt="Макет Пинк">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>PINK</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-barbershop.png" width="360" height="576" alt="Макет Барбершоп">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>BARBERSHOP</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-mishka.png" width="360" height="576" alt="Макет Мишка">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>MISHKA</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-aplus.png" width="360" height="576" alt="Макет с курсами">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>COURSES</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+
+                            <div class="block">
+                                <div class="card-header">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/img-kvast.png" width="360" height="576" alt="Макет Кваст">
+                                </a>
+                                <div class="informational-sedona">
+                                    <a href="#">
+                                        <h3>KVAST</h3>
+                                    </a>
+                                    <p>Информационный сайт для туристов</p>
+                                    <button class="price">9 900 РУБ.</button>
+                                </div>
+                            </div>
+
+                        </section>
+                        <!--Второй красный блок-->
+                        <div class="pages">
+                            <a href="#" class="page active">1</a>
+                            <a href="#" class="page">2</a>
+                            <a href="#" class="page">3</a>
+                            <a href="#" class="page-next">СЛЕДУЮЩАЯ</a>
                         </div>
                     </div>
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-pink.png" width="360" height="576" alt="Макет Пинк">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>PINK</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-barbershop.png" width="360" height="576" alt="Макет Барбершоп">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>BARBERSHOP</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
-                        </div>
-                    </div>
-
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-mishka.png" width="360" height="576" alt="Макет Мишка">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>MISHKA</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
-                        </div>
-                    </div>
-
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-aplus.png" width="360" height="576" alt="Макет с курсами">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>COURSES</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
-                        </div>
-                    </div>
-
-                    <div class="block">
-                        <div class="card-header">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a href="#">
-                            <img src="img/img-kvast.png" width="360" height="576" alt="Макет Кваст">
-                        </a>
-                        <div class="informational-sedona">
-                            <a href="#">
-                                <h3>KVAST</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <button class="price">9 900 РУБ.</button>
-                        </div>
-                    </div>
-
-                </section>
-                <!--Второй красный блок-->
-                <div class="pages">
-                    <a href="#" class="page active">1</a>
-                    <a href="#" class="page">2</a>
-                    <a href="#" class="page">3</a>
-                    <a href="#" class="page-next">СЛЕДУЮЩАЯ</a>
                 </div>
+
+
+
             </div>
         </section>
 
         <section class="map-section">
             <!--Тут я вставлю потом картинку карты, так как она идет как фоновое изображение-->
-            <div class="container">
+            <div class="container1">
                 <div class="address">
                     <h3>NЁRDS DESIGN STUDIO</h3>
                     <div>
@@ -282,35 +295,37 @@
     </main>
     <div class="container">
         <footer>
-            <ul>
-                <li>
-                    <a href="https://vk.com" class="icon">
-                        <span class="visually-hidden">Вконтакте</span>
-                        <span>
-                            <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" class="icon">
-                        <span class="visually-hidden">Фэйсбук</span>
-                        <span>
-                            <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" class="icon">
-                        <span class="visually-hidden">Инстаграм</span>
-                        <span>
-                            <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <div class="text-footer">
-                <b>Давайте дружить, это выгодно!</b>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="https://vk.com" class="icon">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span>
+                                <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="icon">
+                            <span class="visually-hidden">Фэйсбук</span>
+                            <span>
+                                <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" class="icon">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <span>
+                                <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-footer">
+                    <b>Давайте дружить, это выгодно!</b>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
             </div>
         </footer>
     </div>>
