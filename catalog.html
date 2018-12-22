@@ -47,8 +47,8 @@
                                 <legend class="form-text">СТОИМОСТЬ:</legend>
                                 <br>
                                 <div class="range">
-                                    <button></button>
-                                    <button></button>
+                                    <button type="button"></button>
+                                    <button type="button"></button>
                                 </div>
                                 <br>
                                 <label for="from" class="label-items">ОТ</label>
@@ -110,13 +110,13 @@
                                 </label>
                                 <br>
                             </fieldset>
-                            <button class="show-button">ПОКАЗАТЬ</button>
+                            <button type="button" class="show-button">ПОКАЗАТЬ</button>
 
                         </form>
                     </aside>
                     <div class="right-column">
                         <form action="https://echo.htmlacademy.ru" method="POST">
-                           
+
 
                             <div class="selection">
                                 <legend class="form-text">СОРТИРОВАТЬ:</legend>
@@ -124,8 +124,8 @@
                                 <a href="#" class="sort">ПО ТИПУ</a>
                                 <a href="#" class="sort">ПО НАЗВАНИЮ</a>
                                 <br>
-                                <button title="Стрелка вверх" aria-label="стрелка вверх"> </button>
-                                <button title="Стрелка вниз" aria-label="стрелка вниз"> </button>
+                                <button type="button" title="Стрелка вверх" aria-label="стрелка вверх"> </button>
+                                <button type="button" title="Стрелка вниз" aria-label="стрелка вниз"> </button>
                             </div>
 
                         </form>
@@ -146,7 +146,7 @@
                                         <h3>SEDONA</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
                             <div class="block">
@@ -163,7 +163,7 @@
                                         <h3>PINK</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
                             <div class="block">
@@ -180,7 +180,7 @@
                                         <h3>BARBERSHOP</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
 
@@ -198,7 +198,7 @@
                                         <h3>MISHKA</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
 
@@ -216,7 +216,7 @@
                                         <h3>COURSES</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
 
@@ -234,7 +234,7 @@
                                         <h3>KVAST</h3>
                                     </a>
                                     <p>Информационный сайт для туристов</p>
-                                    <button class="price">9 900 РУБ.</button>
+                                    <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
 
@@ -254,43 +254,45 @@
             </div>
         </section>
 
-        <div class="container1">
+
         <section class="map-section">
-                <div class="address">
-                    <h3>NЁRDS DESIGN STUDIO</h3>
-                    <div>
-                        <address>
-                            191186, Санкт-Петербург,
-                            ул.Б.Конюшенная, д.19/8<br>
-                            <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
-                        </address>
-                        <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
-                    </div>
+            <div class="address">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <div>
+                    <address>
+                        191186, Санкт-Петербург,
+                        ул.Б.Конюшенная, д.19/8<br>
+                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                    </address>
+                    <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
                 </div>
+            </div>
 
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                    <fieldset>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset class="modal-window">
 
-                        <h2>Напишите нам</h2>
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="your_name" class="name invalid">
-                        <br>
+                    <h2>Напишите нам</h2>
+                    <div class="my-details">
+                        <label for="name">Ваше имя:
+                            <input type="text" id="name" name="your_name" class="name invalid">
+                        </label>
+                        <label for="mail">Ваш e-mail:
+                            <input type="email" id="mail" name="your_email" class="name">
+                        </label>
+                    </div>
 
-                        <label for="mail">Ваш e-mail:</label>
-                        <input type="email" id="mail" name="your_email" class="name">
-                        <br>
-                        <p><b>Текст письма:</b></p>
-                        <textarea id="text" name="text-letter">В свободной форме</textarea>
-                        <br>
+                    <p><b>Текст письма:</b></p>
+                    <textarea id="text" name="text-letter">В свободной форме</textarea>
+                    <br>
 
-                        <button type="submit">Отправить</button>
-                    </fieldset>
+                    <button type="submit" class="button-cart">ОТПРАВИТЬ</button>
+                </fieldset>
 
-                </form>
-            
+            </form>
+
             <!---Конец-->
         </section>
-    </div>
+
     </main>
     <div class="container">
         <footer>

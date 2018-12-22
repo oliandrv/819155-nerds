@@ -16,12 +16,11 @@ a {
   clip: rect(0 0 0 0);
   margin: -1px;
   }
-
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1160px;
-  }
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
+}
 /*--Header--*/
 
 .main-header {
@@ -30,6 +29,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1160px;
 }
 .main-header-logo:hover {
   opacity: 0.8;
@@ -190,7 +190,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  background-size: contain;
+  background-size: cover;
   min-height: 415px;
 }
 
@@ -585,7 +585,7 @@ hr {
   padding: 72px 0 72px;
 }
 .slogan-statistics {
-  width: 650px;
+  max-width: 650px;
   margin: 20px 0 0;
 }
 .nerds-statistics {
@@ -621,9 +621,70 @@ footer ul {
 .information-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 100px;
 }
 .pages {
-  margin: 60px 90px 60px;
+  margin: 60px 130px 60px;
 }
-
+.percent {
+  display: flex;
+justify-content: space-between
+}
+.percent > div {
+width: 30%;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+}
+.percent dt {
+  margin-top: 20px;
+}
+.percent dd {
+  margin: 0;
+  line-height: 100%;
+}
+.container1 {
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
+}
+.button-cart {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background-color: #fb565a;
+  border-radius: 2px;
+  border: none;
+  margin: 45px 0;
+}
+.modal-window {
+  position: fixed;
+  top: 400px;
+  left: 350px;
+  padding: 70px 90px 85px 100px;
+  display: block;
+  background-color: white;
+  border: none;
+}
+.my-details {
+  display: flex;
+  justify-content: space-between;
+}
+.my-details label {
+  width: 48%;
+}
+.modal-window textarea {
+  width: 100%;
+}
+.my-details input {
+  width: 100%;
+}
+.modal-window h2 {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
