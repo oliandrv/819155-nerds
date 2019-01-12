@@ -29,7 +29,6 @@
             </header>
         </div>
     </div>
-
     <main>
         <section class="headline">
             <div class="gray">
@@ -38,7 +37,6 @@
                     <h1>Магазин готовых шаблонов</h1>
                 </div>
             </div>
-            <!-- Пока не знаю как это сделать-->
             <div class="container">
                 <div class="page-columns">
                     <aside class="left-column">
@@ -59,7 +57,6 @@
                                 <br>
                                 <input type="number" id="before" name="before" value="1500" min="0" max="1500">
                             </fieldset>
-
                             <fieldset class="selection">
                                 <legend class="form-text">СЕТКА:</legend>
 
@@ -68,20 +65,16 @@
                                     Адаптивная
                                 </label>
                                 <br>
-
                                 <label for="filter-grid-fixed" class="label-items">
                                     <input type="radio" value="fixed" name="grid" id="filter-grid-fixed">
                                     Фиксированная
                                 </label>
                                 <br>
-
                                 <label for="filter-grid-rubber" class="label-items">
                                     <input type="radio" value="rubber" name="grid" id="filter-grid-rubber">
                                     Резиновая
                                 </label>
                             </fieldset>
-
-
                             <fieldset class="selection">
                                 <legend class="form-text">ОСОБЕННОСТИ:</legend>
                                 <label for="filter-slide" class="label-items">
@@ -111,12 +104,11 @@
                                 <br>
                             </fieldset>
                             <button type="button" class="show-button">ПОКАЗАТЬ</button>
-
                         </form>
                     </aside>
                     <div class="right-column">
-                        <form  action="https://echo.htmlacademy.ru" method="POST">
-<fieldset class="selection">
+                        <form action="https://echo.htmlacademy.ru" method="POST">
+                            <fieldset class="selection">
                                 <legend class="form-text">СОРТИРОВАТЬ:</legend>
                                 <a href="#" class="sort">ПО ЦЕНЕ</a>
                                 <a href="#" class="sort">ПО ТИПУ</a>
@@ -126,7 +118,6 @@
                                 <button type="button" title="Стрелка вниз" aria-label="стрелка вниз"> </button>
                             </fieldset>
                         </form>
-
                         <section class="information-block">
                             <h2 class="visually-hidden">Готовые шаблоны</h2>
                             <div class="block">
@@ -180,7 +171,6 @@
                                     <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
-
                             <div class="block">
                                 <div class="card-header">
                                     <div></div>
@@ -198,7 +188,6 @@
                                     <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
-
                             <div class="block">
                                 <div class="card-header">
                                     <div></div>
@@ -216,7 +205,6 @@
                                     <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
-
                             <div class="block">
                                 <div class="card-header">
                                     <div></div>
@@ -234,9 +222,7 @@
                                     <button type="button" class="price">9 900 РУБ.</button>
                                 </div>
                             </div>
-
                         </section>
-                        <!--Второй красный блок-->
                         <div class="pages">
                             <a href="#" class="page active">1</a>
                             <a href="#" class="page">2</a>
@@ -245,51 +231,40 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
-
-
         <section class="map-section">
             <div class="address">
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <div>
                     <address>
-                        191186, Санкт-Петербург,
-                        ул.Б.Конюшенная, д.19/8<br>
-                        <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
+                        191186, Санкт-Петербург, <br>
+                        ул.Б.Конюшенная, д.19/8 <br>
+                        <p> <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a> </p>
                     </address>
-                    <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
+                    <a class="button-write" href="writeus.html">НАПИШИТЕ НАМ</a>
                 </div>
             </div>
-
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset class="modal-window">
-
-                    <h2>Напишите нам</h2>
-                    <div class="my-details">
-                        <label for="name">Ваше имя:
-                            <input type="text" id="name" name="your_name" class="name invalid">
-                        </label>
-                        <label for="mail">Ваш e-mail:
-                            <input type="email" id="mail" name="your_email" class="name">
-                        </label>
-                    </div>
-
-                    <p><b>Текст письма:</b></p>
-                    <textarea id="text" name="text-letter">В свободной форме</textarea>
-                    <br>
-
-                    <button type="submit" class="button-cart">ОТПРАВИТЬ</button>
-                </fieldset>
-
-            </form>
-
-            <!---Конец-->
         </section>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="modal-window">
 
+                <h2>Напишите нам</h2>
+                <div class="my-details">
+                    <label for="name">Ваше имя:
+                        <input type="text" id="name" name="your_name" class="name invalid">
+                    </label>
+                    <label for="mail">Ваш e-mail:
+                        <input type="email" id="mail" name="your_email" class="name">
+                    </label>
+                </div>
+                <p><b>Текст письма:</b></p>
+                <textarea id="text" name="text-letter">В свободной форме</textarea>
+                <br>
+                <button type="submit" class="button-cart">ОТПРАВИТЬ</button>
+            </fieldset>
+        </form>
+        </section>
     </main>
     <div class="container">
         <footer>

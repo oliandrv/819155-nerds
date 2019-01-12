@@ -30,7 +30,6 @@
         </div>
     </div>
     <main>
-        <!--Первый блок со слайдами-->
         <section class="information">
             <div class="container">
                 <h2 class="visually-hidden">Девиз</h2>
@@ -42,14 +41,14 @@
                     </div>
                 </div>
                 <div class="slides slide2">
-                        <div class="slide-content">
+                    <div class="slide-content">
                         <b>Любим математику как никто другой</b>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                         <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
                     </div>
                 </div>
                 <div class="slides slide3">
-                        <div class="slide-content">
+                    <div class="slide-content">
                         <b>Только ночь, только хардкор</b>
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                         <a href="#" class="information-button"> УЗНАТЬ БОЛЬШЕ</a>
@@ -57,8 +56,6 @@
                 </div>
             </div>
         </section>
-
-        <!--Конец-->
         <div class="container">
             <section class="services">
                 <h2 class="visually-hidden">Услуги</h2>
@@ -81,10 +78,7 @@
                     <a href="#" class="button3">ЗАКАЗАТЬ</a>
                 </div>
             </section>
-
-            <hr>
-
-            <!--Второй красный блок-->
+            <hr class="line">
             <section class="aboutus">
                 <h2 class="visually-hidden">О нас</h2>
                 <div class="slogan">
@@ -111,23 +105,22 @@
                         <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация Нёрдс">
                         <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
                         <dl class="percent">
-                           <div>
-                         <dt>Уровень самоотдачи</dt>
-                            <dd>146%</dd>
-                        </div>
-                        <div>
-                            <dt>Соблюдение сроков</dt>
-                            <dd>100%</dd>
-                        </div>
-                        <div>
-                            <dt>Минимальная предоплата</dt>
-                            <dd>50%</dd>
-                        </div>
+                            <div>
+                                <dt>Уровень самоотдачи</dt>
+                                <dd>146%</dd>
+                            </div>
+                            <div>
+                                <dt>Соблюдение сроков</dt>
+                                <dd>100%</dd>
+                            </div>
+                            <div>
+                                <dt>Минимальная предоплата</dt>
+                                <dd>50%</dd>
+                            </div>
                         </dl>
                     </div>
                 </div>
-                <hr>
-
+                <hr class="line">
                 <div class="logos">
                     <a href="#">
                         <img src="img/logo-1.png" width="199" height="68" alt="Сайт HTMLAcademy">
@@ -143,47 +136,40 @@
                     </a>
                 </div>
             </section>
-            <hr>
+            <hr class="line">
         </div>
-
-        
-            <section class="map-section">
-                <div class="address">
-                    <h3>NЁRDS DESIGN STUDIO</h3>
-                    <div>
-                        <address>
-                            191186, Санкт-Петербург,
-                            ул.Б.Конюшенная, д.19/8<br>
-                            <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a>
-                        </address>
-                        <button type="submit" class="button-write">НАПИШИТЕ НАМ</button>
-                    </div>
+        <section class="map-section">
+            <div class="address">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <div>
+                    <address>
+                        191186, Санкт-Петербург, <br>
+                        ул.Б.Конюшенная, д.19/8 <br>
+                        <p> <a href="tel:+7(812)275-75-75"> тел.+7(812)275-75-75</a> </p>
+                    </address>
+                    <a class="button-write" href="writeus.html">НАПИШИТЕ НАМ</a>
                 </div>
-            </section>
+            </div>
+        </section>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="modal-window">
 
-            <section class="modal-window">
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                    <fieldset>
+                <h2>Напишите нам</h2>
+                <div class="my-details">
+                    <label for="name">Ваше имя:
+                        <input type="text" id="name" name="your_name" class="name invalid">
+                    </label>
+                    <label for="mail">Ваш e-mail:
+                        <input type="email" id="mail" name="your_email" class="name">
+                    </label>
+                </div>
 
-                        <h2>Напишите нам</h2>
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="your_name">
-                        <br>
+                <p><b>Текст письма:</b></p>
+                <textarea id="text" name="text-letter">В свободной форме</textarea>
+                <br>
 
-                        <label for="mail">Ваш e-mail:</label>
-                        <input type="email" id="mail" name="your_email">
-                        <br>
-                        <p><b>Текст письма:</b></p>
-                        <textarea id="text" name="text-letter">В свободной форме</textarea>
-                        <br>
-
-                        <button type="submit">Отправить</button>
-                    </fieldset>
-                </form>
-            </section>
-        
-        <!-- Конец-->
-
+                <button type="submit" class="button-cart">ОТПРАВИТЬ</button>
+            </fieldset>
     </main>
     <div class="container">
         <footer>
