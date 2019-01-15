@@ -7,15 +7,15 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-}
+ }
 a {
   text-decoration: none;
-  }
+}
 .visually-hidden  {
   position: absolute;
   clip: rect(0 0 0 0);
   margin: -1px;
-  }
+}
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -51,7 +51,7 @@ a {
   color: #000000;
   line-height: 30px;
   text-transform: uppercase;
- }
+}
 .basket img {
   margin-right: 26px;
 }
@@ -66,9 +66,9 @@ a {
   margin-bottom: 19px;
 }
 .information p {
-  color: #283136 ;
-  font-size: 16px ;
-  font-weight: 400 ;
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
 }
  .information a {
@@ -209,15 +209,15 @@ a {
 .address address {
   color: #666666;
   font-size: 16px;
-  font-weight: 400 ;
-  line-height: 18px ;
+  font-weight: 400;
+  line-height: 18px;
   font-style: normal;
 }
 .address address a {
   color: #666666;
   font-size: 16px;
-  font-weight: 400 ;
-  line-height: 18px ;
+  font-weight: 400;
+  line-height: 18px;
 }
 .address p {
   margin-bottom: 20px;
@@ -281,6 +281,8 @@ footer li {
   text-align: center;
 }
 .informational-sedona p {
+  max-width: 200px;
+  margin-left: 90px;
   color: #666666;
   font-size: 16px;
   font-weight: 400;
@@ -288,7 +290,7 @@ footer li {
   text-align: center;
 }
 .pages a {
-  color: #000000 ;
+  color: #000000;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -306,9 +308,9 @@ footer li {
   position: relative;
 }
 .menu-buttons.active::after {
-  content: "" ;
+  content: "";
   position: absolute;
-  bottom: -12px ; 
+  bottom: -12px; 
   left: 3px;
   right: 3px;
   height: 2px;
@@ -339,7 +341,7 @@ footer li {
   opacity: 1;
 }
 .button2:active {
-  background-color:#00aa62 ;
+  background-color:#00aa62;
   color: rgba(206, 191, 191, 0.3);
 }
 .button3:hover,
@@ -378,7 +380,7 @@ footer li {
 }
 .show-button:active {
   background-color: #d5d5d5;
-  color:rgba(0, 0, 0, 0.3) ;
+  color:rgba(0, 0, 0, 0.3);
 }
 .page {
   background-color: #eeeeee;
@@ -503,6 +505,7 @@ footer li {
   margin-right: 10px;
 }
 .price {
+  display: inline-block;
   background-color: #fb565a;
   color:#eeeeee;
   font-size: 16px;
@@ -576,6 +579,7 @@ footer li {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -706,7 +710,7 @@ footer ul {
 }
 .percent {
   display: flex;
-justify-content: space-between
+ justify-content: space-between;
 }
 .percent > div {
 width: 30%;
@@ -845,6 +849,7 @@ justify-content: center;
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -853,7 +858,7 @@ justify-content: center;
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -873,6 +878,8 @@ justify-content: center;
 }
 .label-items {
   display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
   padding-left: 36px;
   padding-top: 6px;
   position: relative;
@@ -913,6 +920,8 @@ justify-content: center;
 }
 .label-items-radio {
   display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
   padding-left: 36px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -965,8 +974,8 @@ justify-content: center;
 } 
 .button-sort-asc {
   margin: 0 15px 0 40px; 
- background-image: url(../img/icon-down-dir.png)
+ background-image: url("../img/icon-down-dir.png");
 }
 .button-sort-desc {
- background-image: url(../img/icon-up-dir.png)
+ background-image: url("../img/icon-up-dir.png");
 }
