@@ -150,6 +150,8 @@ a
     padding-bottom: 17px;
     padding-left: 55px;
 
+    vertical-align: middle;
+
     color: #fff;
     border-radius: 3px;
 }
@@ -328,27 +330,6 @@ a
     line-height: 18px;
 
     color: #283136;
-}
-.logos
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    padding: 50px;
-    padding-bottom: 38px;
-
-    border-top: 2px solid #eee;
-    border-bottom: 2px solid #eee;
-
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 .map-section
 {
@@ -626,9 +607,47 @@ a
     color: rgba(255, 255, 255, .3);
     background-color: #e5a722;
 }
+.logos
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 50px;
+    padding-bottom: 38px;
+
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
 .logos img
 {
     opacity: .2;
+}
+.logos a
+{
+    position: relative;
+}
+.logos a + a::before
+{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -52px;
+
+    width: 2px;
+
+    content: '';
+
+    background-color: #e5e5e5;
 }
 .logos img:hover,
 .logos img:focus
@@ -818,6 +837,7 @@ a
 
     margin: 17px 0 10px;
 
+    vertical-align: middle;
     vertical-align: inherit;
 }
 .informational-sedona
@@ -869,6 +889,8 @@ a
 
     margin: 33px 80px 25px;
     padding: 15px 60px;
+
+    vertical-align: middle;
 
     color: #eee;
     border: none;
@@ -953,6 +975,7 @@ a
     padding: 8px;
 
     cursor: pointer;
+    vertical-align: middle;
     vertical-align: middle;
 
     border-radius: 50%;
@@ -1086,7 +1109,6 @@ a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: flex;
 
     padding: 70px 0;
 
@@ -1195,6 +1217,7 @@ a
 }
 .percent dt
 {
+    max-width: 100px;
     margin-top: 20px;
 }
 .percent dd
@@ -1230,6 +1253,7 @@ a
 .modal-window
 {
     position: fixed;
+    z-index: 10;
     top: 50%;
     left: 50%;
 
@@ -1392,6 +1416,7 @@ a
     width: 50%;
     margin: 1px 0 0;
 
+    vertical-align: middle;
     vertical-align: middle;
     text-transform: uppercase;
 }
@@ -1586,7 +1611,7 @@ a
 }
 .html-site
 {
-    margin-top: 5px;
+    margin-top: 13px;
     margin-left: -19px;
 }
 .borodino-site
@@ -1596,6 +1621,47 @@ a
 }
 .pink-site
 {
+    padding-top: 14px;
     padding-right: 18px;
     padding-bottom: 5px;
+}
+.bear-site
+{
+    padding-top: 2px;
+}
+.button-cross
+{
+    font-size: 50px;
+
+    position: absolute;
+    top: 72px;
+    right: 90px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    opacity: .5;
+    color: #fb565a;
+    border: none;
+    background: transparent;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.button-cross:hover
+{
+    opacity: 1;
+}
+.button-cross:active
+{
+    opacity: .3;
 }
