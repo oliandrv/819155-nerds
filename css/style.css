@@ -532,7 +532,7 @@ a
 }
 .pages a + a
 {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 .information-button:hover,
 .information-button:focus
@@ -838,7 +838,6 @@ a
     margin: 17px 0 10px;
 
     vertical-align: middle;
-    vertical-align: inherit;
 }
 .informational-sedona
 {
@@ -1173,7 +1172,11 @@ a
         flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+.block:nth-child(odd)
+{
+    margin-left: 25px;
 }
 .pages
 {
@@ -1416,7 +1419,6 @@ a
     width: 50%;
     margin: 1px 0 0;
 
-    vertical-align: middle;
     vertical-align: middle;
     text-transform: uppercase;
 }
